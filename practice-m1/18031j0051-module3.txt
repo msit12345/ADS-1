@@ -1,0 +1,57 @@
+                                                            Activity-3:
+1.Give tilde approximations for the following quantities:
+Notations:                          Tilde approximations: 
+N + 1                                       N
+1 + 1/N                                     1
+(1 + 1/N )(1 + 2/N )                        1
+2N^3 - 15 N^2 + N                           2N^3
+lg(2N )/lg N                                1
+lg(N^2 + 1) / lg N                          2
+                                                        Activity-4:
+1.Give the order of growth (as a function of N ) of the running times of each of the following code fragments:
+Note: use the following Notations for writing Answers: N, 1, log(N), N^2, N*log(N), 2^N, N^3, log(N)
+code fragments                                                                     NOTATIONS
+Code-1:     int count = 0;
+            for(int i = 0; i < N; i++){                                                N
+                count++;
+            }
+Code-2:           int sum = 0;
+            if(sum == 0){                                                              1
+                sum++;                                                              
+}
+Code-3:           for(int i = N; i > 0; i < N/2){
+            int sum = 0;                                                               log(N)
+}
+Code-4:           for(int i = 0; i < N; i++){
+                for(int j = 0; j < N; j++){                                            N^2
+                    System.out.println(“Hello”);
+                }
+            }
+Code-5:     for(int i = 0; i < N; i++){
+                for(int j = 0; j < N; j = j * 2){                                      Nlog(N)
+                    System.out.println(“Hello”);
+                }
+            }
+Code-6:     public int fibonacci(int number) {
+ if (number <= 1) {
+                       return number;                                                   1
+                 } else {
+                           return fibonacci(number - 1) + fibonacci(number - 2); 
+                 }
+}
+                                                     Activity5:
+Give the order of growth (as a function of N ) of the running times of each of the following code fragments:
+Note: use the following Notations for writing Answers: N, 1, log(N), N^2, N*log(N), 2^N, N^3, log(N)
+       code fragment                                                              NOTATIONS
+Code-1:     int sum = 0;
+        for (int n = N; n > 0; n /= 2)
+            for(int i = 0; i < n; i++)                                               N
+                Sum++;
+Code-2:    int sum = 0;
+        for (int i = 1 i < N; i *= 2)
+            for (int j = 0; j < i; j++)                                              N
+                sum++;
+Code-3:    int sum = 0;
+        for (int i = 1;i < N; i *= 2)
+            for (int j = 0; j < N; j++)                                               Nlog(N)
+                Sum++;
