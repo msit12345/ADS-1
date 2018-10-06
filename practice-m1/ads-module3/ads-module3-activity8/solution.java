@@ -1,6 +1,6 @@
 import java.util.*;
 import threesum.Threesum;
-public class triplet {
+public class solution {
 	public static void main(String[] args) {
 		Threesum ts=new Threesum();
 		int n;

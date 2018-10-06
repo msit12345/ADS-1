@@ -1,6 +1,6 @@
 import java.util.*;
 import twoarrays.Twoarrays;
-public class sortedarray {
+public class solution {
 	public static void main(String[] args) {
 		int n,m;
 		Scanner sc=new Scanner(System.in);
