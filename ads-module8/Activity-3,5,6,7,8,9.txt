@@ -54,4 +54,4 @@ Ans.2nd iterartion=[3,4,6,2,1,0]
 5.Which method runs faster for an array with all keys identical, basic selection sort or basic insertion sort?
 Ans.Insertion sort
 6.Which method runs faster for an array in reverse order, basic selection sort or basic insertion sort?
-Ans.Selection sort
+Ans.Insertion sort
