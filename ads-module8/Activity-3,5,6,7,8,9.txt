@@ -1,0 +1,57 @@
+1.Show, how selection sort sorts the array E A S Y Q U E S T I O N.
+Ans.A E E I N O Q S S T U Y
+STEP1=AEEYQUSSTION
+STEP2=AEEIQUSSTYON
+STEP3=AEEINUSSYYOQ
+STEP4=AEEINOSSTYUQ
+STEP5=AEEINOQSTYUS
+STEP6=AEEINOQSSYUT
+STEP7=AEEINOQSSTUY
+2.Show, how Insertion sort sorts the array E A S Y Q U E S T I O N.
+Ans.A E E I N O Q S S T U Y
+STEP1=EASYQUESTION
+STEP2=AESYQUESTION
+STEP3=AEQSYUESTION
+STEP4=AEQSUYESTION
+STEP5=AEEQSUYSTION
+STEP6=AEEQSSUYTION
+STEP7=AEEQSSTUYION
+STEP8=AEEIQSSTUYON
+STEP9=AEEINQSSTUYO
+STEP10=AEEINOQSSTUY
+3.write the missing statements in the below code:
+public class Selection { 
+public static void sort(Comparable[] a) {
+int N = ---------------;    //Blank 1
+for (int i = 0; i < N; i++) { 
+Int min = ---------------;    //Blank 2
+for (int j = i+1; j < N; j++) 
+if (less(a[j], a[min])) 
+min = ------------------; //Blank3
+exch(a, i, ----------------);     //Blank4
+}
+ }
+ }
+Ans.blank1=a.length,blank2=i,blank3=j,blank4=min
+4.If a = {3, 6, 4, 2, 1, 0} is the input for below code
+public class Insertion { 
+public static void sort(Comparable[] a) { 	
+int N = a.length; 
+for (int i = 1; i < N; i++) { 
+for (int j = i; j > 0 && less(a[ j ], a[j-1]); j--) 
+exch(a, j, j-1); 
+} 
+}}}
+Answer the following questions
+Note: while writing answers use the following notation [1, 2, 3, 4]
+Print the elements in the array a, after completion of 2nd iteration of loop i
+Print the elements in the array a, in 3rd iteration of i and after completion of 2nd iteration of loop j
+Print the elements in the array a, in 4th iteration of i and after completion of 1st iteration of loop j
+Ans.2nd iterartion=[3,4,6,2,1,0]
+3rd iteration=[2,3,4,6,1,0]
+4th iteration=[1,2,3,4,6,0]
+5th iteration=[0,1,2,3,4,6]
+5.Which method runs faster for an array with all keys identical, basic selection sort or basic insertion sort?
+Ans.Insertion sort
+6.Which method runs faster for an array in reverse order, basic selection sort or basic insertion sort?
+Ans.Selection sort
