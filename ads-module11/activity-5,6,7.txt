@@ -1,0 +1,65 @@
+1.Give traces by showing how the keys E A S Y Q U E S T I O N are sorted with quick sort.
+Ans.   E A S Y Q U E S T I O N
+STEP1  E A S Y Q U E S T I O N
+STEP2  E A E Y Q U S S T I O N
+STEP3  E A E I Q U S S T Y O N
+STEP4  E A E I N U S S T Y O Q
+STEP5  E A E I N O Q S T Y U S
+STEP6  A E E I N O Q S S Y U T
+STEP7  A E E I N O Q S S T U Y
+2.write the missing blanks
+private static int partition(Comparable[ ] a, int lo, int hi) {
+        int i = lo;
+        int j = hi + 1;
+        Comparable v = a[lo];
+        while (true) { 
+            while (less(a[---------], v)) { //Blank 1
+                if (i == --------) break; //Blank 2
+            }
+while (less(------------, a[--j])) { // Blank 3
+                if (j == lo) --------------;     // Blank 4
+}
+            if (i >= ----------) break;
+            exch(a, i, j);
+        }
+        exch(a,-------------, j);
+        return j;
+    }
+Ans. 
+Blank1=++i
+Blank2=hi
+Blank3=v
+Blank4=break
+Blank5=j
+Blank=lo
+3.private static int partition(Comparable[] a, int lo, int hi) {
+        int i = lo;
+        int j = hi + 1;
+        Comparable v = a[lo];
+        while (true) { 
+            while (less(a[++i], v)) {
+                if (i == hi) break;
+            }
+            while (less(v, a[--j])) {
+                if (j == lo) break;  
+            }
+	if (i >= j) break;
+
+            	exch(a, i, j);
+        }
+        exch(a, lo, j);
+        return j;
+    }
+
+Note: output should be in the following format
+
+[1, 2, 0, 3, 5, 8, 7]
+
+
+What will be the output when we call partition with parameters({1, 2, 8, -1, 0, -3, 4}, 0, 6 )
+Ans.-3 -1 0 0 1 2 4 6 8 { }
+
+What will be the output when we call partition with parameters({5, 8, 9, 10, 21, 25, 11, 13, 15, 12}, 4, 9 )
+Ans.4 5 8 9 9 10 11 12 13 15 21 25 { }
+
+

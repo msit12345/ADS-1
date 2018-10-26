@@ -1,0 +1,131 @@
+1.public int count(int n) {
+  if(n <= 6){
+    return 0;
+  }
+  if(n%10 == 7){
+    return 1 + count(n/10);
+  }
+  return count(n/10);
+}
+Answer the following question when count method is called with different parameters.
+count(717)    =2
+count(7)      =1
+count(123)    =0
+count(47571)  =2
+count(99999)  =0
+2.public int triangle(int rows) {
+  if(rows == 0){
+    return 0;
+  }
+  return rows + triangle(rows-1);
+}
+Answer the following question when triangle method is called with different parameters.
+triangle(3)=6
+triangle(2)=3
+triangle(6)=21
+triangle(4)=10
+triangle(7)=28
+3.public int bunnyEars(int bunnies)
+{
+	if(bunnies == 0)
+		return 0;
+	if(bunnies % 2 == 1)
+		return 2 + bunnyEars(bunnies-1);
+	return 3 + bunnyEars(bunnies-1);
+}
+Answer the following question when bunnyEars method is called with different parameters.
+bunnyEars(0)=0
+bunnyEars(2)=5
+bunnyEars(4)=10
+bunnyEars(5)=12
+bunnyEars(10)=25
+4.public String endX(String str)
+{
+	if(str.length() == 0)
+		return str;
+	if(str.charAt(0) == 'x')
+		return endX(str.substring(1)) + 'x';
+	return str.charAt(0) + endX(str.substring(1));
+}
+Answer the following question when endX method is called with different parameters.
+endX("xxre")    =rexx
+endX("xxhixx")  =hixxxx
+endX("xx")      =xx
+end("bxx")      =bxx
+end("bxax")     =baxx
+5.public String parenBit(String str)
+{
+	int len = str.length();
+	if(str.charAt(0) != '(')
+	{
+		if(str.charAt(len - 1) != ')')
+			return parenBit(str.substring(1, len -1));
+		return parenBit(str.substring(1));
+	}
+	if(str.charAt(len - 1) != ')')
+		return parenBit(str.substring(0, len - 1));
+	return str;
+}
+Answer the following question when endX method is called with different parameters.
+parenBit("xyz(abc)123")              =(abc)
+parenBit("(xy)1")                    =(xy)
+parenBit("hello(not really)there")   =(not really)
+parenBit("()")                       =()
+parenBit("res (ipsa) loquitor")      =(ipsa)
+6.Given a non negative number n, return the factorial of n, which is n * (n-1) * (n-2)... 1. Compute the result recursively (without loops).
+Ans.
+int fact(n)
+{
+int n;
+if(n==1)
+{
+return 1;
+}
+return n*fact(n-1);
+}
+for example:n=5
+step1=5*fact(4)
+step2=5*4*fact(3)
+step3=5*4*3*fact(2)
+step4=5*4*3*2*fact(1)
+step5=5*4*3*2*1=120
+7.Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*".
+Example:
+pairStar("hello")---->"hel*lo"
+pairStar("xxyy") ----> "x*xy*y"
+pairStar("aaaa") ----> "a*a*a*a".
+Ans.
+
+
+
+
+
+8.public static int fibonacci(int number){ 
+if(number == 1){ 
+return 1; 
+}
+else if(number == 2){
+	return 2;
+} 
+return fibonacci(number-1) + fibonacci(number -2); 
+In above code for number = 5 check how many times the fibonacci function is called
+8 
+In above code for number = 10 check how many times the fibonacci function is called
+89 
+public static int fibonacci(int number){
+int fibValue=0;
+if(number == 1 ){
+return 1;
+}else if(number == 2){
+return 2;
+}else if(fibArray[number]!=0){
+return fibArray[number];
+}else{
+ fibValue=fibonacci(number-1)+fibonacci(number-2);
+ fibArray[number]=fibValue;
+ return fibValue;
+}
+}
+In above code for number = 5 check how many times the fibonacci function is called
+
+In above code for number = 10 check how many times the fibonacci function is called
