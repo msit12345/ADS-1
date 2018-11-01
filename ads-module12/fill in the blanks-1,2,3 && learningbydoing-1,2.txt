@@ -1,0 +1,37 @@
+1.Fill in the blanks-1
+Fill the missing statements in the below code:
+pirvate void swim(int k){
+while(k>-----&&less(-----,-----)){//blank1//blank2//blank3
+exch(----,----);//blank4//blank5
+k=-----;//blank6
+}
+Ans.blank1=1,blank2=k/2,blank3=k,blank4=k,blank5=k/2,blank6=k/2
+2.Fill in the blanks-2
+Fill the missing statements in the below code:
+private void sink(int k){
+while(2*k<=---){//blank1
+int j=----;//blank2
+if(j<----&&less(----,----))----;//blank3//blank4//blank5//blank6//
+if(!less(---,---))break; //blank7//blank8
+exch(---,---);//blank9//blank10
+k=----;//blank11
+}
+Ans.
+blank1=N,blank2=2*k,blank3=N,blank4=j,blank5=j+1
+blank6=j++,blank7=k,blank8=j,blank9=k,blank10=j,blank11=j
+3.Fill in the blanks-3
+Suppose if we built a minPQ with following keys, then answer the following questions
+I A M S T E V E R O G E R S
+Write the output of the minPQ array ?
+Ans.AEEEGIMORSTV
+What are the child nodes for node ‘A’?
+ANS.EE
+What is the root node after deleteMin() called 5 times?
+Ans.I
+4.Suppose that the sequence P R I O * R * * I * T * Y * * * Q U E * * * U * E (where a letter means insert and an asterisk means remove the maximum) 
+is applied to an initially empty priority queue.Give the sequence of values returned by remove the maximum operations.
+Ans.
+RRPOTYIIUQEUE
+5.Is an array that is sorted in Ascending order a min-oriented heap? Why?
+Ans.For a min heap, we must have A[Parent(i)] <= A[i]. For an array in sorted order, the children of any node at index k, if they exist, are at 2*k and/or 2*k + 1. 
+Since the array is in sorted order and they are at a greater index, both children are greater than or equal to the parent, satisfying the min heap property. 
