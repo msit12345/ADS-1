@@ -1,0 +1,28 @@
+1.private int rank(Key key, Node x) {
+        if (x == _______)   return 0;                              //Blank1
+        int cmp = key.compareTo(________);              //Blank2
+        if (cmp < 0)   return rank(key, ________);        //Blank3 
+        else if (cmp > 0) return 1 + size(x.left) + rank(key, _____); //Blank4 
+        else              return size(______);  //Blank5 
+
+}
+Blank1: NULL
+Blank2: X.KEY
+Blank3: X.LEFT
+Blank4: X.RIGHT
+Blank5: X.LEFT
+2. Give the sequences of nodes examined when the methods in BST are used to compute each of the following quantities for the tree drawn at below.
+a. floor("Q")
+b. select(5)
+c. ceiling("Q")
+d. rank("J")
+e. size("D", "T")
+f. keys("D", "T")
+Ans.
+a=q
+b=j
+c=q
+d=3
+e=1 1
+f=d,q,t
+
