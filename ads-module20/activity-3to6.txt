@@ -1,0 +1,72 @@
+Fill the following blanks in the delete method of BST
+private Node delete(Node x, Key key) {
+        if (x == null) 	return ____________;  //Blank1
+        int cmp = key.compareTo(_______);  //Blank2
+        if (cmp < 0)	x.left  = delete(__________,  key); //Blank3
+        else if (cmp > 0) 	x.right = delete(__________, key); //Blank4
+        else { 
+            if (x.right == null)		return __________; //Blank5
+            if (x.left  == _____ ) 		return x.right; //Blank6
+            Node t = ________ ;    //Blank7
+            x = min(___________); //Blank8
+           ____________ = deleteMin(t.right);  //Blank9
+            x.left = t.left;
+        } 
+        x.size = size(x.left) + size(x.right) + _________; //Blank10
+        return x;
+    }
+Blank1: null
+Blank2:x.key
+Blank3:x.left
+Blank4:x.right
+Blank5:x.left
+Blank6:null
+Blank7:x
+Blank8:t.right
+Blank9:x.right
+Blank10:1
+Fill in the blanks-2
+2.Answer the following questions on the below given BST
+If we want to remove Node J from the above BST. Then what will be parent Node for Node M
+Ans.p
+If we want to remove Node T from the above BST. Then what will be parent Node for Node S
+Ans.r
+If we want to remove Node E from the above BST. Then what will the root Node of the BST
+Ans.l
+If we want to remove Node Q from the above BST. Then what will be parent Node for Node J
+Ans.h
+If we want to remove Node D from the above BST. Then what will the left child for Node E
+Ans.a
+3.Draw the 2-3 tree that results when you insert the keys E A S Y Q U E S T I O N, in that order into an initially empty 2-3 tree.
+Ans.
+INSERT E                       E
+INSERT A                       AE
+INSERT S                       AE  S
+INSERT Y                       AE  SY
+INSERT Q                      A EQ SY
+INSERT U                      AE QS UY
+INSERT E                      AE QS UY
+INSERT S                      AE QS UY
+INSERT T                      AE QS TU Y
+INSERT I                      A EI QS TU Y
+INSERT O                      AE IO QS TU Y
+INSERT N                     A EI NO QS TU Y
+4.Draw a table that compare the worst, best and average cases of insertion, searching and deletion of Linear search symbol table,
+Binary search symbol table, Binary search tree and 2-3 Tree.
+Ans.                         insertion                                      searching                                       deletion
+                      worstcase  bestcase      averagecase           worstcase  bestcase         averagecase         worstcase bestcase  averagecase
+Linear search:            N         O(1)            N                     N         O(1)            N/2                  N        O(1)          N/2
+Binary search:            N         O(1)            N                     logN      O(1)            logN                 N        O(1)          N/2
+Binary search tree:       N         N               1.39logN              N         logN            logN                 N        1.39logN       ?
+2-3 tree:                 logN      logN            logN                  logN      logN            logN                 logN     logN          logN
+
+
+
+
+
+
+
+
+
+
+
